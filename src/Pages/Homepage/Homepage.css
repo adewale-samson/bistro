@@ -1,0 +1,34 @@
+.top-menu{
+    background-color: #474747;
+    color: #F9F9F7;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 150px;
+}
+.left-col{
+    display: flex;
+    gap: 25px;
+}
+.tele-ico{
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+.message-ico{
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+.right-col{
+    display: flex;
+    gap: 4px;
+}
+
+.twitter{
+    background-color: red;
+    /* color: inherit; */
+}
