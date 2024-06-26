@@ -6,8 +6,37 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import Navbar from '../../Components/Navbar/Navbar';
+import Hero from '../../Components/Hero/Hero';
+import Card from '../../Components/Card/Card';
+import image1 from '../../assets/img1.png'
+import image2 from '../../assets/img2.png'
+import image3 from '../../assets/img3.png'
+import image4 from '../../assets/img4.png'
 
 const Homepage = () => {
+  const cardDetails = [{
+    img: image1,
+    heading: 'Desserts',
+    text: 'In the new era of technology we look in the future with certainty and pride for our life.',
+    link: 'Explore Menu'
+  },
+  {
+    img: image2,
+    heading: 'Breakfast',
+    text: 'In the new era of technology we look in the future with certainty and pride for our life.',
+    link: 'Explore Menu'
+  },{
+    img: image3,
+    heading: 'Main Dishes',
+    text: 'In the new era of technology we look in the future with certainty and pride for our life.',
+    link: 'Explore Menu'
+  },{
+    img: image4,
+    heading: 'Drinks',
+    text: 'In the new era of technology we look in the future with certainty and pride for our life.',
+    link: 'Explore Menu'
+  },
+]
   return (
     <div>
         <div className='top-menu'>
@@ -23,6 +52,17 @@ const Homepage = () => {
             </div>
         </div>
         <Navbar />
+        <Hero />
+        <div className='card-section'>
+          <h2 className='browse'>Browse Our Menu</h2>
+          <div className='card-box'>
+            {
+              cardDetails.map((item, i) => {
+                return <Card item={item}/>
+              })
+            }
+          </div>
+        </div>
     </div>
   )
 }

@@ -32,3 +32,22 @@
     background-color: red;
     /* color: inherit; */
 }
+.card-section{
+    padding: 120px 152px;
+}
+.browse{
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 60.5px;
+    text-align: center;
+    color: #2C2F24;
+    margin-bottom: 64px;
+}
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+
+}
